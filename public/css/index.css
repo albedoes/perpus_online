@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+#search {
+    width: 100%;
+    padding: 10px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #2d7d66;
+    color: white;
+}
+
+#filterType {
+    background-color: #2d3b46;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Animal card styling */
+.animal-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    background-color: #2d7d66;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.badge {
+    background-color: #2d3b46;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
