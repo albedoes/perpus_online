@@ -16,16 +16,17 @@ return new class extends Migration
         Schema::create('buku', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-    $table->string('pengarang');
-    $table->string('penerbit');
-    $table->year('tahun_terbit');
-    $table->string('isbn')->nullable();
-    $table->string('kategori');
+            $table->string('pengarang');
+            $table->string('penerbit');
+            $table->year('tahun_terbit');
+            $table->string('isbn')->nullable();
+            $table->string('kategori');
             $table->text('description')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -34,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('animals');
+        Schema::dropIfExists('buku');
     }
 };

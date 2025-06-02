@@ -23,6 +23,8 @@ Route::get('/', function () {
     $buku = Buku::all();
     return view('buku', compact('buku'));
 })->name('buku');
+Route::get('/buku/{id}/baca', [BukuController::class, 'baca'])->name('buku.baca');
+
 
 // Route untuk login dan logout
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
